@@ -1,6 +1,8 @@
 const express = require('express')
 const app=express();
 const db = require('./db');
+require('dotenv').config();
+
 const userrouter=require('./routes/userRouter')
 const CandidateRouter=require('./routes/candidateRouter')
 const bodyparser= require('body-parser')
